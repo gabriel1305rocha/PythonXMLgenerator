@@ -31,8 +31,8 @@ polymersCommercial = polymersCommercial.drop(polymersCommercial.index[[0,1]])
 polymersCustomerService.columns=polymersCustomerService.iloc[1]
 polymersCustomerService = polymersCustomerService.drop(polymersCustomerService.index[[0,1]])
 
-VRoleXML = '<VRole>'
-VRoleXMLEnd = '</VRole>\n            '
+VRoleXML = '\n            <VRole>'
+VRoleXMLEnd = '</VRole>'
 #Initial Chemicals
 def marketingIntelligenceChemicals():
     chemicalMarketf = chemicalMarket['Business Position'].loc[chemicalMarket['MarketingIntelligence'].notnull()]
